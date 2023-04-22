@@ -3,9 +3,17 @@
     <h2 class="font-bold text-4xl">Adarsh<span class="text-primary">.</span></h2>
     <div class="flex-auto flex justify-center">
       <div class="flex flex-row w-96 justify-evenly self-center">
-        <h5 class="hover:text-primary hover:cursor-pointer">Home</h5>
-        <h5 class="hover:text-primary hover:cursor-pointer">About</h5>
-        <h5 class="hover:text-primary hover:cursor-pointer">Projects</h5>
+        <h5 class="hover:text-primary hover:cursor-pointer" (click)="goToPage('home')">
+          Home
+        </h5>
+        <h5 class="hover:text-primary hover:cursor-pointer focus:text-primary" (click)="goToPage('about')">
+          About
+        </h5>
+        <h5 class="hover:text-primary hover:cursor-pointer">
+          <a [routerLink]="['/projects']" routerLinkActive="router-link-active"  >
+            Projects
+          </a>
+        </h5>
         <h5 class="hover:text-primary hover:cursor-pointer">Testimonials</h5>
       </div>
     </div>
