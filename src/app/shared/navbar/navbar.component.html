@@ -1,20 +1,24 @@
 <nav class ="w-full absolute top-0 left-0 right-0 bg-white h-28 overflow-x-hidden">
   <div class="h-full w-full md:ml-20 flex flex-row items-center border-b-2 border-opacity-25 border-gray-400">
-    <h2 class="font-bold text-4xl">Adarsh<span class="text-primary">.</span></h2>
-    <div class="flex-auto flex justify-center">
-      <div class="flex flex-row w-96 justify-evenly self-center">
-        <h5 class="hover:text-primary hover:cursor-pointer" (click)="goToPage('home')">
-          Home
+    <h2 class="font-bold text-6xl">Adarsh<span class="text-primary">.</span></h2>
+    <div class="w-32 flex-auto flex justify-center">
+      <div class="flex flex-row md:mx-72 w-full justify-evenly self-center" >
+        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer">
+          <a routerLink='/' routerLinkActive="text-primary" [routerLinkActiveOptions]="{ exact: true }" >
+            Home
+          </a>
         </h5>
-        <h5 class="hover:text-primary hover:cursor-pointer focus:text-primary" (click)="goToPage('about')">
-          About
+        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary">
+          <a routerLink='about' routerLinkActive="text-primary"  >
+            About
+          </a>
         </h5>
-        <h5 class="hover:text-primary hover:cursor-pointer">
-          <a [routerLink]="['/projects']" routerLinkActive="router-link-active"  >
+        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer">
+          <a routerLink='projects' routerLinkActive="text-primary">
             Projects
           </a>
         </h5>
-        <h5 class="hover:text-primary hover:cursor-pointer">Testimonials</h5>
+        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer">Testimonials</h5>
       </div>
     </div>
 
