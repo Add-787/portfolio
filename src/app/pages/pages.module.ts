@@ -5,6 +5,7 @@ import { IntroComponent } from './home/intro/intro.component';
 import { StatsComponent } from './home/stats/stats.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
+import { AboutCardComponent } from './about/about-card/about-card.component';
 
 
 
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     IntroComponent,
     StatsComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    AboutCardComponent
   ],
   imports: [
     CommonModule
