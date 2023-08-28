@@ -6,17 +6,21 @@ import { StatsComponent } from './home/stats/stats.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { AboutCardComponent } from './about/about-card/about-card.component';
+import { SitesListComponent } from './home/sites-list/sites-list.component';
+import { SiteCardComponent } from './home/sites-list/site-card/site-card.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    SitesListComponent,
     IntroComponent,
     StatsComponent,
     ProjectsComponent,
     AboutComponent,
-    AboutCardComponent
+    AboutCardComponent,
+    SiteCardComponent
   ],
   imports: [
     CommonModule
