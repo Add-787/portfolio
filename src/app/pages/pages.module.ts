@@ -3,14 +3,24 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './home/intro/intro.component';
 import { StatsComponent } from './home/stats/stats.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutComponent } from './about/about.component';
+import { AboutCardComponent } from './about/about-card/about-card.component';
+import { SitesListComponent } from './home/sites-list/sites-list.component';
+import { SiteCardComponent } from './home/sites-list/site-card/site-card.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    SitesListComponent,
     IntroComponent,
-    StatsComponent
+    StatsComponent,
+    ProjectsComponent,
+    AboutComponent,
+    AboutCardComponent,
+    SiteCardComponent
   ],
   imports: [
     CommonModule
