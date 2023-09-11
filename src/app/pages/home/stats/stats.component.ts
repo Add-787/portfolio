@@ -1,3 +1,4 @@
+import { InfoService } from './../../../shared/info.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public info:InfoService) { }
 
   ngOnInit(): void {
   }

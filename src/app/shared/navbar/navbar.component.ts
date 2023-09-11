@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -13,10 +13,14 @@ export class NavbarComponent implements OnInit {
     private router: Router
   ) { }
 
-  isActive: boolean = false;
+  @Input() isOpen: boolean = false;
 
   ngOnInit(): void {
 
+  }
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
   }
 
   goToPage(navLink: string) {
@@ -25,6 +29,3 @@ export class NavbarComponent implements OnInit {
 
 }
 
-enum NavLink {
-  
-}
