@@ -1,26 +1,54 @@
-<nav class ="w-full absolute top-0 left-0 right-0 bg-white h-28 overflow-x-hidden">
-  <div class="h-full w-full md:ml-20 flex flex-row items-center border-b-2 border-opacity-25 border-gray-400">
-    <h2 class="font-bold text-6xl">Adarsh<span class="text-primary">.</span></h2>
-    <div class="w-32 flex-auto flex justify-center">
-      <div class="flex flex-row md:mx-72 w-full justify-evenly self-center" >
-        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer">
-          <a routerLink='/' routerLinkActive="text-primary" [routerLinkActiveOptions]="{ exact: true }" >
-            Home
-          </a>
-        </h5>
-        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary">
-          <a routerLink='about' routerLinkActive="text-primary"  >
-            About
-          </a>
-        </h5>
-        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer ">
-          <a routerLink='projects' routerLinkActive="text-primary">
-            Projects
-          </a>
-        </h5>
-        <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer">Testimonials</h5>
+<nav class ="w-full sticky top-0 left-0 right-0 bg-white">
+  <div class="flex flex-col">
+    <div class="h-full w-full lg:pl-20 lg:relative flex flex-row items-center border-b-2 border-opacity-25 border-gray-400 px-4">
+      <h2 class="font-bold text-4xl lg:text-6xl">Adarsh<span class="text-primary">.</span></h2>
+      <div class="w-full flex h-24">
+        <div class="hidden w-full lg:flex flex-row justify-evenly lg:ml-48" >
+          <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary my-auto">
+            <a routerLink='/' routerLinkActive="text-primary" [routerLinkActiveOptions]="{ exact: true }" >
+              Home
+            </a>
+          </h5>
+          <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary my-auto">
+            <a routerLink='about' routerLinkActive="text-primary"  >
+              About
+            </a>
+          </h5>
+          <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary my-auto">
+            <a routerLink='projects' routerLinkActive="text-primary">
+              Projects
+            </a>
+          </h5>
+          <h5 class="md:text-3xl hover:text-primary hover:cursor-pointer focus:text-primary my-auto">Testimonials</h5>
+        </div>
+      </div>
+      <div>
+        <button data-collapse-toggle="mega-menu-icons" (click)="toggleMenu()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg lg:hidden" aria-controls="mega-menu-icons" aria-expanded="false">
+          <span class="sr-only">Main Menu</span>
+          <svg *ngIf="!isOpen" class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+          <svg *ngIf="isOpen" class="w-9 h-9 ease-in" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+        </button>
       </div>
     </div>
-
+    <div *ngIf="isOpen" class="h-full lg:hidden bg-black">
+      <div class="flex flex-col divide-y-2 divide-slate-400 divide-opacity-40">
+        <div routerLink="/" class="group h-full w-full p-4 hover:bg-yellow-500">
+          <a class="text-slate-200 group-hover:text-black">Home</a>
+        </div>
+        <div routerLink="about" class="group h-full w-full p-4 hover:bg-yellow-500">
+          <a class="text-slate-200 group-hover:text-black">About</a>
+        </div>
+        <div routerLink="projects" class="group h-full w-full p-4 hover:bg-yellow-500">
+          <a class="text-slate-200 group-hover:text-black">Projects</a>
+        </div>
+        <div  routerLink="testimonials" class="group h-full w-full p-4 hover:bg-yellow-500">
+          <a class="text-slate-200 group-hover:text-black">Testimonials</a>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
