@@ -9,6 +9,9 @@ import { AboutCardComponent } from './about/about-card/about-card.component';
 import { SitesListComponent } from './home/sites-list/sites-list.component';
 import { SiteCardComponent } from './home/sites-list/site-card/site-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { StatBoxComponent } from './home/stats/stat-box/stat-box.component';
+import { ContactCardComponent } from './home/contact/contact-card/contact-card.component';
 
 
 
@@ -22,7 +25,10 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     AboutComponent,
     AboutCardComponent,
     SiteCardComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ContactComponent,
+    StatBoxComponent,
+    ContactCardComponent
   ],
   imports: [
     CommonModule
