@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { AboutCardComponent } from './about/about-card/about-card.component';
 import { SitesListComponent } from './home/sites-list/sites-list.component';
 import { SiteCardComponent } from './home/sites-list/site-card/site-card.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 
@@ -20,7 +21,8 @@ import { SiteCardComponent } from './home/sites-list/site-card/site-card.compone
     ProjectsComponent,
     AboutComponent,
     AboutCardComponent,
-    SiteCardComponent
+    SiteCardComponent,
+    TestimonialsComponent
   ],
   imports: [
     CommonModule
