@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './home/intro/intro.component';
 import { StatsComponent } from './home/stats/stats.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { AboutCardComponent } from './about/about-card/about-card.component';
 import { SitesListComponent } from './home/sites-list/sites-list.component';
@@ -12,6 +11,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { StatBoxComponent } from './home/stats/stat-box/stat-box.component';
 import { ContactCardComponent } from './home/contact/contact-card/contact-card.component';
+import { ProjectsComponent } from './home/projects/projects.component';
+import { TimelineComponent } from './home/projects/timeline/timeline.component';
 
 
 
@@ -21,14 +22,15 @@ import { ContactCardComponent } from './home/contact/contact-card/contact-card.c
     SitesListComponent,
     IntroComponent,
     StatsComponent,
-    ProjectsComponent,
     AboutComponent,
     AboutCardComponent,
     SiteCardComponent,
     TestimonialsComponent,
     ContactComponent,
     StatBoxComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    ProjectsComponent,
+    TimelineComponent
   ],
   imports: [
     CommonModule
