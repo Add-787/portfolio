@@ -13,6 +13,7 @@ import { StatBoxComponent } from './home/stats/stat-box/stat-box.component';
 import { ContactCardComponent } from './home/contact/contact-card/contact-card.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { TimelineComponent } from './home/projects/timeline/timeline.component';
+import { TimelineTileComponent } from './home/projects/timeline/timeline-tile/timeline-tile.component';
 
 
 
@@ -30,7 +31,8 @@ import { TimelineComponent } from './home/projects/timeline/timeline.component';
     StatBoxComponent,
     ContactCardComponent,
     ProjectsComponent,
-    TimelineComponent
+    TimelineComponent,
+    TimelineTileComponent
   ],
   imports: [
     CommonModule
