@@ -23,6 +23,11 @@ export class NavbarComponent implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
+  scrollToView(element: HTMLElement)
+  {
+    element.scrollIntoView({behavior: 'smooth'});
+  }
+
   goToPage(navLink: string) {
     this.router.navigate([navLink], { skipLocationChange: true });
   }

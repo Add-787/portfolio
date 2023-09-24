@@ -1,3 +1,4 @@
+import { ContactComponent } from './pages/home/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NgModule } from '@angular/core';
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   }
 ];
 
