@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
+  @Input()startTimeLine:boolean = false;
+  progress:number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges() {
+    console.log('View initialized.')
+    if(this.startTimeLine)
+    {
+      let id = setInterval(() => {
+        this.progress++;
+        if(this.progress == 100)
+        {
+          clearInterval(id)
+        }
+      }, 75);
+    }
+  }
+
+  isActivated(index: number) {
+    return this.progress >= (index/3)* 100;
   }
 
 }

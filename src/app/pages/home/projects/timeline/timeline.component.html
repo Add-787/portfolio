@@ -1,13 +1,13 @@
 <div class="h-56 w-full flex flex-row items-center">
   <div class="relative w-full h-6 bg-secondary rounded-full">
-    <div class="absolute h-6 bg-primary rounded-full" style="width:20%">
+    <div class="absolute h-6 bg-primary rounded-full" [ngStyle]="{'width.%': progress }">
     </div>
     <div class="w-full absolute -top-4">
       <div class="flex flex-row justify-between">
         <app-timeline-tile [icon]="'rocket'" [isActivated]="true"></app-timeline-tile>
-        <app-timeline-tile [isActivated]="true"></app-timeline-tile>
-        <app-timeline-tile></app-timeline-tile>
-        <app-timeline-tile [icon]="'thumbsup'"></app-timeline-tile>
+        <app-timeline-tile [isActivated]="isActivated(1)"></app-timeline-tile>
+        <app-timeline-tile [isActivated]="isActivated(2)"></app-timeline-tile>
+        <app-timeline-tile [icon]="'thumbsup'" [isActivated]="isActivated(3)"></app-timeline-tile>
       </div>
     </div>
   </div>
