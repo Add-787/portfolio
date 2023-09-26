@@ -5,13 +5,20 @@ import { Directive, Input, HostListener } from '@angular/core';
 })
 export class ScrollToDirective {
 
-  @Input() target = '';
+  @Input() target = 'home';
 
   @HostListener('click')
   onClick() {
     console.log(this.target);
-    const targetEle = document.querySelector(this.target)
-    targetEle?.scrollIntoView({behavior: 'smooth'});
+    const navHeight = 64;
+
+    window.scrollTo({
+      behavior: 'smooth',
+      top:
+        document.querySelector(this.target)!.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        navHeight
+    })
   }
 
   constructor() { }

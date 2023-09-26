@@ -11,6 +11,9 @@ import { ContactCardComponent } from './home/contact/contact-card/contact-card.c
 import { ProjectsComponent } from './home/projects/projects.component';
 import { TimelineComponent } from './home/projects/timeline/timeline.component';
 import { TimelineTileComponent } from './home/projects/timeline/timeline-tile/timeline-tile.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { TestimonialsGridComponent } from './home/testimonials/testimonials-grid/testimonials-grid.component';
+import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid/testimonials-tile/testimonials-tile.component';
 
 
 
@@ -26,7 +29,10 @@ import { TimelineTileComponent } from './home/projects/timeline/timeline-tile/ti
     ContactCardComponent,
     ProjectsComponent,
     TimelineComponent,
-    TimelineTileComponent
+    TimelineTileComponent,
+    TestimonialsComponent,
+    TestimonialsGridComponent,
+    TestimonialsTileComponent
   ],
   imports: [
     CommonModule
