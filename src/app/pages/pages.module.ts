@@ -14,6 +14,7 @@ import { TimelineTileComponent } from './home/projects/timeline/timeline-tile/ti
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { TestimonialsGridComponent } from './home/testimonials/testimonials-grid/testimonials-grid.component';
 import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid/testimonials-tile/testimonials-tile.component';
+import { AboutMeComponent } from './home/about-me/about-me.component';
 
 
 
@@ -32,7 +33,8 @@ import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid
     TimelineTileComponent,
     TestimonialsComponent,
     TestimonialsGridComponent,
-    TestimonialsTileComponent
+    TestimonialsTileComponent,
+    AboutMeComponent
   ],
   imports: [
     CommonModule
