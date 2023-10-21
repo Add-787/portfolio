@@ -15,6 +15,9 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
 import { TestimonialsGridComponent } from './home/testimonials/testimonials-grid/testimonials-grid.component';
 import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid/testimonials-tile/testimonials-tile.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
+import { AboutGridComponent } from './home/about-me/about-grid/about-grid.component';
+import { AboutSidemenuComponent } from './home/about-me/about-grid/about-sidemenu/about-sidemenu.component';
+import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.component';
 
 
 
@@ -34,7 +37,10 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
     TestimonialsComponent,
     TestimonialsGridComponent,
     TestimonialsTileComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    AboutGridComponent,
+    AboutSidemenuComponent,
+    IconBoxComponent
   ],
   imports: [
     CommonModule
