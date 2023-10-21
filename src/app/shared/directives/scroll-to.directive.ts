@@ -9,7 +9,6 @@ export class ScrollToDirective {
 
   @HostListener('click')
   onClick() {
-    console.log(this.target);
     const navHeight = 64;
 
     window.scrollTo({

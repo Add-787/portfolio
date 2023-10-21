@@ -18,6 +18,9 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
 import { AboutGridComponent } from './home/about-me/about-grid/about-grid.component';
 import { AboutSidemenuComponent } from './home/about-me/about-grid/about-sidemenu/about-sidemenu.component';
 import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.component';
+import { SkillsBoxComponent } from './home/about-me/about-grid/skills-box/skills-box.component';
+import { EducationBoxComponent } from './home/about-me/about-grid/education-box/education-box.component';
+import { HobbiesBoxComponent } from './home/about-me/about-grid/hobbies-box/hobbies-box.component';
 
 
 
@@ -40,7 +43,10 @@ import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.c
     AboutMeComponent,
     AboutGridComponent,
     AboutSidemenuComponent,
-    IconBoxComponent
+    IconBoxComponent,
+    SkillsBoxComponent,
+    EducationBoxComponent,
+    HobbiesBoxComponent
   ],
   imports: [
     CommonModule

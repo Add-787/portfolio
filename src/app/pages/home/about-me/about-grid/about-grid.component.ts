@@ -9,7 +9,15 @@ export class AboutGridComponent implements OnInit {
 
   constructor() { }
 
+  optionSelected: string = 'skills';
+
   ngOnInit(): void {
   }
 
+  changeOption(option: string)
+  {
+    this.optionSelected = option;
+  }
+
 }
+

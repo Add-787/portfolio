@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-about-sidemenu',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutSidemenuComponent implements OnInit {
 
+  @Output() selectedMenuEvent = new EventEmitter<string>();
+
+  optionSelected : string = 'skills';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onOptionSelected(option: string)
+  {
+    this.optionSelected = option;
+    this.selectedMenuEvent.emit(option);
   }
 
 }
