@@ -3,7 +3,11 @@
     <app-icon-box [icon]="optionSelected"></app-icon-box>
   </div>
   <div class="row-span-2">
-    <app-skills-box></app-skills-box>
+    <div class="h-52" [ngSwitch]="optionSelected">
+      <app-skills-box *ngSwitchCase="'skills'"></app-skills-box>
+      <app-education-box *ngSwitchCase="'education'"></app-education-box>
+      <app-hobbies-box *ngSwitchCase="'hobbies'"></app-hobbies-box>
+    </div>
   </div>
   <div class="row-span-1">
     <app-about-sidemenu (selectedMenuEvent)="changeOption($event)"></app-about-sidemenu>
