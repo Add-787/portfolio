@@ -14,6 +14,13 @@ import { TimelineTileComponent } from './home/projects/timeline/timeline-tile/ti
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { TestimonialsGridComponent } from './home/testimonials/testimonials-grid/testimonials-grid.component';
 import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid/testimonials-tile/testimonials-tile.component';
+import { AboutMeComponent } from './home/about-me/about-me.component';
+import { AboutGridComponent } from './home/about-me/about-grid/about-grid.component';
+import { AboutSidemenuComponent } from './home/about-me/about-grid/about-sidemenu/about-sidemenu.component';
+import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.component';
+import { SkillsBoxComponent } from './home/about-me/about-grid/about-boxes/skills-box/skills-box.component';
+import { EducationBoxComponent } from './home/about-me/about-grid/about-boxes/education-box/education-box.component';
+import { HobbiesBoxComponent } from './home/about-me/about-grid/about-boxes/hobbies-box/hobbies-box.component';
 
 
 
@@ -32,7 +39,14 @@ import { TestimonialsTileComponent } from './home/testimonials/testimonials-grid
     TimelineTileComponent,
     TestimonialsComponent,
     TestimonialsGridComponent,
-    TestimonialsTileComponent
+    TestimonialsTileComponent,
+    AboutMeComponent,
+    AboutGridComponent,
+    AboutSidemenuComponent,
+    IconBoxComponent,
+    SkillsBoxComponent,
+    EducationBoxComponent,
+    HobbiesBoxComponent
   ],
   imports: [
     CommonModule

@@ -1,0 +1,17 @@
+<div class="h-20 shadow-xl rounded-full flex flex-row divide-secondary divide-x-2 divide-opacity-50">
+  <div (click)="this.onOptionSelected('skills')" class="h-full w-full flex flex-col justify-center items-center rounded-l-full hover:cursor-pointer" [ngClass]="this.optionSelected === 'skills' ? 'bg-secondary' : 'bg-secondaryAccent'">
+    <h4 class="text-sm text-primary font-bold">
+      Skills
+    </h4>
+  </div>
+  <div (click)="this.onOptionSelected('education')" class="h-full w-full flex flex-col justify-center items-center hover:cursor-pointer" [ngClass]="this.optionSelected === 'education' ? 'bg-secondary' : 'bg-secondaryAccent'">
+    <h4 class="text-sm text-primary font-bold">
+      Education
+    </h4>
+  </div>
+  <div (click)="this.onOptionSelected('hobbies')" class="h-full w-full flex flex-col justify-center items-center rounded-r-full hover:cursor-pointer" [ngClass]="this.optionSelected === 'hobbies' ? 'bg-secondary' :'bg-secondaryAccent'">
+    <h4 class="text-sm text-primary font-bold">
+      Hobbies
+    </h4>
+  </div>
+</div>

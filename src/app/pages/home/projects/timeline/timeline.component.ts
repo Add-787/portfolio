@@ -30,7 +30,7 @@ export class TimelineComponent implements OnInit {
   }
 
   isActivated(index: number) {
-    return this.progress >= (index/3)* 100;
+    return this.progress >= (index/4)* 100;
   }
 
 }

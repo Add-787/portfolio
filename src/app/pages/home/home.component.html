@@ -1,18 +1,21 @@
-<div class=" h-screen w-screen grid grid-rows-14 bg-background">
-  <div class="row-span-2 my-16">
+<div class="h-full w-screen grid grid-rows-14 bg-background">
+  <div id="intro" class="w-full row-span-2 pt-12 md:p-24">
     <app-intro></app-intro>
   </div>
   <div class="h-full row-span-2 bg-background">
     <div class="flex flex-row">
       <div class="h-full w-1/2 bg-secondaryAccent bg-opacity-70">
-        <div class="w-screen flex flex-col gap-8 p-10 md:p-24 mx-auto">
+        <div class="w-screen flex flex-col gap-8 p-6 md:p-24 mx-auto">
           <app-sites-list></app-sites-list>
           <app-stats></app-stats>
         </div>
       </div>
     </div>
   </div>
-  <div id="projects" class="row-span-2 bg-secondaryAccent bg-opacity-70">
+  <div id="about" class="row-span-2 bg-primary">
+    <app-about-me></app-about-me>
+  </div>
+  <div id="projects" class="w-full row-span-2 bg-secondaryAccent bg-opacity-70">
     <app-projects></app-projects>
   </div>
   <div class="row-span-2 bg-background">

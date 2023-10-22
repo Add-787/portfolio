@@ -13,14 +13,8 @@ export class NavbarComponent implements OnInit {
     private router: Router
   ) { }
 
-  @Input() isOpen: boolean = false;
-
   ngOnInit(): void {
 
-  }
-
-  toggleMenu() {
-    this.isOpen = !this.isOpen;
   }
 
   scrollToView(element: HTMLElement)
