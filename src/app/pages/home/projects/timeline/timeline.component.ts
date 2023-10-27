@@ -16,7 +16,7 @@ export class TimelineComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log('View initialized.')
+    // console.log('View initialized.')
     if(this.startTimeLine)
     {
       let id = setInterval(() => {
