@@ -1,0 +1,6 @@
+<div class="flex flex-col mt-6">
+  <app-timeline-vert-tile [isActivated]="startTimeline" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [isActivated]="activated(1)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [isActivated]="activated(2)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [isActivated]="activated(3)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+</div>

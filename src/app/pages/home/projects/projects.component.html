@@ -3,7 +3,11 @@
   <p class="text-white text-base md:text-lg text-opacity-50">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </p>
-  <div class="h-fit p-2">
-    <app-timeline [startTimeLine]="startTimeLine"></app-timeline>
+  <div class="hidden lg:block h-fit p-2">
+    <app-timeline [startTimeLine]="startTimeline"></app-timeline>
   </div>
+  <div class="lg:hidden h-fit w-full p-2">
+    <app-timeline-vert [startTimeline]="startTimeline"></app-timeline-vert>
+  </div>
+
 </div>

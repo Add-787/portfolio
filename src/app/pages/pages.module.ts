@@ -20,7 +20,11 @@ import { AboutSidemenuComponent } from './home/about-me/about-grid/about-sidemen
 import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.component';
 import { SkillsBoxComponent } from './home/about-me/about-grid/about-boxes/skills-box/skills-box.component';
 import { EducationBoxComponent } from './home/about-me/about-grid/about-boxes/education-box/education-box.component';
-import { HobbiesBoxComponent } from './home/about-me/about-grid/about-boxes/hobbies-box/hobbies-box.component';
+import { OthersBoxComponent } from './home/about-me/about-grid/about-boxes/others-box/others-box.component';
+import { ProjectsListComponent } from './home/projects/projects-list/projects-list.component';
+import { ProjectsTileComponent } from './home/projects/projects-tile/projects-tile.component';
+import { TimelineVertTileComponent } from './home/projects/timeline-vert/timeline-vert-tile/timeline-vert-tile.component';
+import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-vert.component';
 
 
 
@@ -46,7 +50,11 @@ import { HobbiesBoxComponent } from './home/about-me/about-grid/about-boxes/hobb
     IconBoxComponent,
     SkillsBoxComponent,
     EducationBoxComponent,
-    HobbiesBoxComponent
+    OthersBoxComponent,
+    ProjectsListComponent,
+    ProjectsTileComponent,
+    TimelineVertComponent,
+    TimelineVertTileComponent
   ],
   imports: [
     CommonModule
