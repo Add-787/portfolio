@@ -22,21 +22,21 @@ export class InfoService {
     return [
       new Site
       (
-      "./assets/placeholder.png",
+      "./assets/github_logo.png",
       "Github",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "https://github.com/Add-787"
       ),
       new Site
       (
-      "./assets/placeholder.png",
+      "./assets/linkedin_logo.png",
       "LinkedIn",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "https://linkedin.com/in/adarsh-shetty-81844b190"
       ),
       new Site
       (
-      "./assets/placeholder.png",
+      "./assets/substack_logo.png",
       "Substack",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "https://substack.com/@barackodrama?utm_source=edit-profile-page"
