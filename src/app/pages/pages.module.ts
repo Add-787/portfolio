@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
@@ -21,8 +22,6 @@ import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.c
 import { SkillsBoxComponent } from './home/about-me/about-grid/about-boxes/skills-box/skills-box.component';
 import { EducationBoxComponent } from './home/about-me/about-grid/about-boxes/education-box/education-box.component';
 import { OthersBoxComponent } from './home/about-me/about-grid/about-boxes/others-box/others-box.component';
-import { ProjectsListComponent } from './home/projects/projects-list/projects-list.component';
-import { ProjectsTileComponent } from './home/projects/projects-tile/projects-tile.component';
 import { TimelineVertTileComponent } from './home/projects/timeline-vert/timeline-vert-tile/timeline-vert-tile.component';
 import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-vert.component';
 
@@ -51,13 +50,12 @@ import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-ve
     SkillsBoxComponent,
     EducationBoxComponent,
     OthersBoxComponent,
-    ProjectsListComponent,
-    ProjectsTileComponent,
     TimelineVertComponent,
     TimelineVertTileComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

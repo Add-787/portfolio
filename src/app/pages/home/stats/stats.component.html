@@ -3,8 +3,7 @@
     <h2 class="text-primary font-bold text-3xl md:text-8xl">2+</h2>
     <h2 class="text-white text-center font-semibold text-xs md:text-xl">Years of Experience</h2>
   </div>
-  <app-stat-box></app-stat-box>
-  <app-stat-box></app-stat-box>
-  <app-stat-box></app-stat-box>
-  <app-stat-box></app-stat-box>
+  <div *ngFor="let stat of infoService.getStats()">
+    <app-stat-box [stat]="stat"></app-stat-box>
+  </div>
 </div>
