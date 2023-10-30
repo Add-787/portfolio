@@ -1,6 +1,7 @@
 <div class="flex flex-col mt-6">
-  <app-timeline-vert-tile [isActivated]="startTimeline" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
-  <app-timeline-vert-tile [isActivated]="activated(1)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
-  <app-timeline-vert-tile [isActivated]="activated(2)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
-  <app-timeline-vert-tile [isActivated]="activated(3)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [project]="projects[0]" [isActivated]="startTimeline" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [project]="projects[1]" [isActivated]="activated(1)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [project]="projects[2]" [isActivated]="activated(2)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [project]="projects[3]" [isActivated]="activated(3)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
+  <app-timeline-vert-tile [project]="projects[4]" [isActivated]="activated(4)" (activateNext)="onActivateNext()"></app-timeline-vert-tile>
 </div>

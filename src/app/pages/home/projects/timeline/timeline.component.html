@@ -8,11 +8,11 @@
     </div>
     <div class="w-full relative -top-7 md:-top-10">
       <div class="flex flex-row justify-between">
-        <app-timeline-tile [icon]="'rocket'" [isActivated]="true"></app-timeline-tile>
-        <app-timeline-tile [isActivated]="isActivated(1)"></app-timeline-tile>
-        <app-timeline-tile [isActivated]="isActivated(2)"></app-timeline-tile>
-        <app-timeline-tile [isActivated]="isActivated(3)"></app-timeline-tile>
-        <app-timeline-tile [icon]="'thumbsup'" [isActivated]="isActivated(4)"></app-timeline-tile>
+        <app-timeline-tile [project]="projects[0]" [isActivated]="true"></app-timeline-tile>
+        <app-timeline-tile [project]="projects[1]" [isActivated]="isActivated(1)"></app-timeline-tile>
+        <app-timeline-tile [project]="projects[2]" [isActivated]="isActivated(2)"></app-timeline-tile>
+        <app-timeline-tile [project]="projects[3]" [isActivated]="isActivated(3)"></app-timeline-tile>
+        <app-timeline-tile [project]="projects[4]" [isActivated]="isActivated(4)"></app-timeline-tile>
       </div>
     </div>
   </div>

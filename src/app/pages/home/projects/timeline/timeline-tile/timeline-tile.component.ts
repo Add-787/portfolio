@@ -1,3 +1,4 @@
+import { Project } from './../../../../../shared/models/projects.model';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TimelineTileComponent implements OnInit {
 
   @Input()isActivated: boolean = false;
+  @Input() project!: Project;
   @Input()icon: string = '';
 
   constructor() { }

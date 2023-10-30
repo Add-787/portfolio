@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Project } from 'src/app/shared/models/projects.model';
 
 @Component({
   selector: 'app-timeline-vert-tile',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class TimelineVertTileComponent implements OnInit {
 
   @Input()isActivated: boolean = false;
-  @Input() icon: string = '';
+  @Input() project!: Project;
 
   @Output() activateNext: EventEmitter<void> = new EventEmitter();
 
