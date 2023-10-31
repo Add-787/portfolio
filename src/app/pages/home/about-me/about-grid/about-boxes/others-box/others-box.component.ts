@@ -1,3 +1,4 @@
+import { InfoService } from 'src/app/shared/info.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OthersBoxComponent implements OnInit {
 
-  constructor() { }
+  constructor(public infoService: InfoService) { }
 
   ngOnInit(): void {
   }
-
 }

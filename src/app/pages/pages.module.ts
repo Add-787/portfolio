@@ -24,6 +24,8 @@ import { EducationBoxComponent } from './home/about-me/about-grid/about-boxes/ed
 import { OthersBoxComponent } from './home/about-me/about-grid/about-boxes/others-box/others-box.component';
 import { TimelineVertTileComponent } from './home/projects/timeline-vert/timeline-vert-tile/timeline-vert-tile.component';
 import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-vert.component';
+import { ToolsLinkComponent } from './home/about-me/about-grid/about-boxes/skills-box/tools-link/tools-link.component';
+import { LinksIconComponent } from './home/about-me/about-grid/about-boxes/links-icon/links-icon.component';
 
 
 
@@ -51,7 +53,9 @@ import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-ve
     EducationBoxComponent,
     OthersBoxComponent,
     TimelineVertComponent,
-    TimelineVertTileComponent
+    TimelineVertTileComponent,
+    ToolsLinkComponent,
+    LinksIconComponent
   ],
   imports: [
     CommonModule,

@@ -1,8 +1,17 @@
 <div class="h-full w-full p-4">
   <h4 class="text-white font-semibold">
-    Basic expertise
+    Basic Expertise
   </h4>
-  <p>
-
+  <p class="text-white text-opacity-75 text-sm">
+    Fairly experienced with the C# .NET framework, especially with respect to real-time applications of signalR and creation of web api's.<br>
+    Making robust frontend web applications with Angular using tailwind for styling<span class="text-white font-semibold"> (like this one).</span><br>
+    Also have worked on developing Android applications with Kotlin, Java and Flutter.<br>
   </p>
+  <br>
+  <h4 class="text-white font-semibold">
+    Tools I love using
+  </h4>
+  <div class="w-fit pt-2 grid grid-cols-5 md:grid-cols-9 gap-1">
+    <app-tools-link *ngFor="let tool of infoService.getTools()" [tool]="tool"></app-tools-link>
+  </div>
 </div>

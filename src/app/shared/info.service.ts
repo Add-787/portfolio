@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { Stat } from './models/stats.model';
 import { Site } from './models/sites.model';
 import { Quote } from './models/quotes.model';
+import { Tool } from './models/tools.model';
+import { Link } from './models/links.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +15,7 @@ export class InfoService {
 
   getStats() : Stat[] {
     return [
-      new Stat("Websites",3),
+      new Stat("Websites",9),
       new Stat("Mobile Apps",3),
       new Stat("Articles", 1),
       new Stat("Lighthouse",97)
@@ -62,8 +64,8 @@ export class InfoService {
       ),
       new Quote
       (
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "Adarsh Shetty",
+        "Not as good in fifa as he thinks, but he tries",
+        "Trevor Pinto",
         "Friend"
       ),
       new Quote
@@ -84,66 +86,76 @@ export class InfoService {
   getProjects() : Project[] {
     return [
       new Project(
-        "Sept 2022",
+        "Aug 2021",
         "Joined Tismo",
         "rocket",
         [
-          "Lorem ipsum dolor sit amet iywfcl fire",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf"
+          "Started my career at Tismo as a Trainee Engineer.",
         ]
       ),
       new Project(
-        "Sept 2022",
-        "Joined Tismo",
+        "Dec 2021",
+        "Mobile Apps",
         "tick",
         [
-          "Lorem ipsum dolor sit amet iywfcl fire",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf"
+          "Led the development of Android applications that communicate with firmware devices.",
+          "Used technologies such as Bluetooth LE and NFC.",
+          "Worked with databases like Sqlite for offline storage of application data.",
+          "Have been working with both view based and Jetpack compose to build modern UI."
         ]
       ),
       new Project(
-        "Sept 2022",
-        "Joined Tismo",
+        "Mar 2022",
+        "Kiosk Mode",
         "tick",
         [
-          "Lorem ipsum dolor sit amet iywfcl fire",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf"
+          "Worked on updating the framework and libraries of legacy applications to newer versions.",
+          "Configured the OS in rasperry pi systems to operate safely in kiosk mode.",
         ]
       ),
       new Project(
-        "Sept 2022",
-        "Joined Tismo",
+        "July 2022",
+        "Web Apps with .NET",
         "tick",
         [
-          "Lorem ipsum dolor sit amet iywfcl fire",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf"
+          "Worked on ASP.NET web application that connected medical professionals to laser service professionals through instant video calls.",
+          "Worked with signalR for sending real-time notifications to service individuals.",
+          "Deployed the application as docker containers on an AWS EC2 instance.",
         ]
       ),
       new Project(
         "Sept 2022",
-        "Joined Tismo",
+        "To be Contd.",
         "thumbsup",
         [
-          "Lorem ipsum dolor sit amet iywfcl fire",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf",
-          "Lorem ipsum dolor cgf"
+          "Still going. Don't know till when.",
         ]
       ),
 
+    ]
+  }
+
+  getTools() : Tool[] {
+    return [
+      new Tool("./assets/dotnet_icon.png","https://angular.io/"),
+      new Tool("./assets/angular_icon.png","https://angular.io/"),
+      new Tool("./assets/docker_icon.png","https://angular.io/"),
+      new Tool("./assets/androidstudio_icon.png","https://angular.io/"),
+      new Tool("./assets/flutter_icon.png","https://angular.io/"),
+      new Tool("./assets/figma_icon.png","https://angular.io/"),
+      new Tool("./assets/tailwind_icon.png","https://angular.io/"),
+      new Tool("./assets/vscode_icon.png","https://angular.io/"),
+    ]
+  }
+
+  getInterests() : Link[] {
+    return [
+      new Link("./assets/realmadrid_icon.png","interests","https://angular.io/"),
+      new Link("./assets/guitar_icon.png","interests","https://angular.io/"),
+      new Link("./assets/pokemon_icon.png","interests","https://angular.io/"),
+      new Link("./assets/marvel_icon.png","interests","https://angular.io/"),
+      new Link("./assets/aot_icon.png","interests","https://angular.io/"),
+      new Link("./assets/tiss_icon.webp","interests","https://angular.io/"),
     ]
   }
 }
