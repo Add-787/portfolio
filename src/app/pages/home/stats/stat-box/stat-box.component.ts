@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Stat } from './../../../../shared/models/stats.model';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-stat-box',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stat-box.component.scss']
 })
 export class StatBoxComponent implements OnInit {
+
+  @Input()
+  stat!: Stat;
 
   constructor() { }
 

@@ -1,15 +1,15 @@
-<div class="h-full my-8 grid grid-cols-2 grid-rows-3">
+<div class="h-full my-5 grid grid-cols-3 grid-rows-3 gap-2">
   <div class="row-span-3 col-span-1">
     <app-icon-box [icon]="optionSelected"></app-icon-box>
   </div>
-  <div class="row-span-2">
-    <div class="h-52" [ngSwitch]="optionSelected">
+  <div class="row-span-2 col-span-2">
+    <div class="h-full w-full" [ngSwitch]="optionSelected">
       <app-skills-box *ngSwitchCase="'skills'"></app-skills-box>
       <app-education-box *ngSwitchCase="'education'"></app-education-box>
-      <app-hobbies-box *ngSwitchCase="'hobbies'"></app-hobbies-box>
+      <app-others-box *ngSwitchCase="'others'"></app-others-box>
     </div>
   </div>
-  <div class="row-span-1">
+  <div class="h-24 col-span-2">
     <app-about-sidemenu (selectedMenuEvent)="changeOption($event)"></app-about-sidemenu>
   </div>
 </div>

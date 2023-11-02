@@ -1,9 +1,13 @@
 <div class="h-fit w-screen flex flex-col p-4 sm:p-10 md:p-24">
   <h2 class="text-white text-3xl md:text-6xl py-2 font-bold">Projects</h2>
   <p class="text-white text-base md:text-lg text-opacity-50">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Telling you everything I have worked on without breaking any confidentiality agreements.
   </p>
-  <div class="h-fit p-2">
-    <app-timeline [startTimeLine]="startTimeLine"></app-timeline>
+  <div class="hidden lg:block h-fit p-2">
+    <app-timeline [startTimeLine]="startTimeline"></app-timeline>
   </div>
+  <div class="lg:hidden h-fit w-full p-2">
+    <app-timeline-vert [startTimeline]="startTimeline"></app-timeline-vert>
+  </div>
+
 </div>

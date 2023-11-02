@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HobbiesBoxComponent } from './hobbies-box.component';
+import { LinksIconComponent } from './links-icon.component';
 
-describe('HobbiesBoxComponent', () => {
-  let component: HobbiesBoxComponent;
-  let fixture: ComponentFixture<HobbiesBoxComponent>;
+describe('LinksIconComponent', () => {
+  let component: LinksIconComponent;
+  let fixture: ComponentFixture<LinksIconComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HobbiesBoxComponent ]
+      declarations: [ LinksIconComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HobbiesBoxComponent);
+    fixture = TestBed.createComponent(LinksIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

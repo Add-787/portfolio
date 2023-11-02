@@ -9,11 +9,11 @@ export class ProjectsComponent implements OnInit {
 
   id:any;
   progress:number = 0;
-  startTimeLine:boolean = false;
+  startTimeline:boolean = false;
 
   @HostListener('mouseover')
   onMouseOver() {
-    this.startTimeLine = true;
+    this.startTimeline = true;
   }
 
   constructor() { }

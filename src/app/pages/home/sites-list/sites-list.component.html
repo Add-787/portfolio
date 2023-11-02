@@ -1,6 +1,6 @@
 <div class="flex flex-row gap-2 md:gap-5">
-  <app-site-card></app-site-card>
-  <app-site-card></app-site-card>
-  <app-site-card></app-site-card>
+  <div *ngFor="let site of infoService.getSites()" class="flex-1">
+    <app-site-card [site]="site"></app-site-card>
+  </div>
 </div>
 

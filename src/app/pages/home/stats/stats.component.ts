@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  constructor(public info:InfoService) { }
+  constructor(public infoService:InfoService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

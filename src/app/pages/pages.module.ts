@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
@@ -20,7 +21,11 @@ import { AboutSidemenuComponent } from './home/about-me/about-grid/about-sidemen
 import { IconBoxComponent } from './home/about-me/about-grid/icon-box/icon-box.component';
 import { SkillsBoxComponent } from './home/about-me/about-grid/about-boxes/skills-box/skills-box.component';
 import { EducationBoxComponent } from './home/about-me/about-grid/about-boxes/education-box/education-box.component';
-import { HobbiesBoxComponent } from './home/about-me/about-grid/about-boxes/hobbies-box/hobbies-box.component';
+import { OthersBoxComponent } from './home/about-me/about-grid/about-boxes/others-box/others-box.component';
+import { TimelineVertTileComponent } from './home/projects/timeline-vert/timeline-vert-tile/timeline-vert-tile.component';
+import { TimelineVertComponent } from './home/projects/timeline-vert/timeline-vert.component';
+import { ToolsLinkComponent } from './home/about-me/about-grid/about-boxes/skills-box/tools-link/tools-link.component';
+import { LinksIconComponent } from './home/about-me/about-grid/about-boxes/links-icon/links-icon.component';
 
 
 
@@ -46,10 +51,15 @@ import { HobbiesBoxComponent } from './home/about-me/about-grid/about-boxes/hobb
     IconBoxComponent,
     SkillsBoxComponent,
     EducationBoxComponent,
-    HobbiesBoxComponent
+    OthersBoxComponent,
+    TimelineVertComponent,
+    TimelineVertTileComponent,
+    ToolsLinkComponent,
+    LinksIconComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

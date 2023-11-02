@@ -5,18 +5,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ScrollToDirective } from "./directives/scroll-to.directive";
 
 
-
 @NgModule({
   declarations: [
     NavbarComponent,
-    ScrollToDirective
+    ScrollToDirective,
    ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
   ]
 })
 export class SharedModule { }
