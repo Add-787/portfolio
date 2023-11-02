@@ -18,7 +18,7 @@ export class InfoService {
       new Stat("Websites",9),
       new Stat("Mobile Apps",3),
       new Stat("Articles", 1),
-      new Stat("Lighthouse",97)
+      new Stat("Problems",99)
     ]
   }
 
@@ -28,21 +28,21 @@ export class InfoService {
       (
       "./assets/github_logo.png",
       "Github",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Currently working on a multiplayer game in .Net, hoping that I complete this one atleast. Find out if that happens and also find other such half-finished projects.",
       "https://github.com/Add-787"
       ),
       new Site
       (
       "./assets/linkedin_logo.png",
       "LinkedIn",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "You can also connect with me on Linkedin. You will get the same information just in a much less cooler format.",
       "https://linkedin.com/in/adarsh-shetty-81844b190"
       ),
       new Site
       (
       "./assets/substack_logo.png",
       "Substack",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I have very strong opinions on movies, shows and football. If you are interested in my hot takes, you can check them out here.",
       "https://substack.com/@barackodrama?utm_source=edit-profile-page"
       ),
     ]
@@ -52,33 +52,27 @@ export class InfoService {
     return [
       new Quote
       (
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "Adarsh Shetty",
-        "Friend"
+        "He is patient, but sometimes when teaching me maths, he only gets confused and then he only gets irritated because he is confused.",
+        "Emmanuel Tito Samuel",
+        "Student"
       ),
       new Quote
       (
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "Adarsh Shetty",
-        "Friend"
+        "Sits in front of the computer all day.",
+        "Sarita Shetty",
+        "Mother"
       ),
       new Quote
       (
-        "Not as good in fifa as he thinks, but he tries",
+        "Not as good in fifa as he thinks.",
         "Trevor Pinto",
         "Friend"
       ),
       new Quote
       (
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "Adarsh Shetty",
-        "Friend"
-      ),
-      new Quote
-      (
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "Adarsh Shetty",
-        "Friend"
+        "Adarsh is pretty smart and good at what he does. Also a great friend to have",
+        "Cleon Pinto",
+        "True Friend"
       )
     ]
   }
@@ -128,7 +122,7 @@ export class InfoService {
         "To be Contd.",
         "thumbsup",
         [
-          "Still going. Don't know till when.",
+          "Still going strong.",
         ]
       ),
 
