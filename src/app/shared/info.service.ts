@@ -18,7 +18,7 @@ export class InfoService {
       new Stat("Websites",9),
       new Stat("Mobile Apps",3),
       new Stat("Articles", 1),
-      new Stat("Problems",99)
+      new Stat("Legacy SW",2)
     ]
   }
 
